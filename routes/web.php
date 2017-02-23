@@ -22,4 +22,9 @@ Route::get('/nosotros', function () {
 
 /* llmar vista con controlador */
 Route::get('/home','SitesController@home');
+/*
+Route::get('/home',function(){
+$datos=App\Perfiles::all();
+return $datos;
+});
 

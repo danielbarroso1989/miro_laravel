@@ -1,9 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
 
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+/* colore */
+$naranja:#FF6122;
+$rojo:#E82B0C;
+$rojo_claro:#FF0000;
+$rosa:#E80C77;
+$purpura:#FF0DF8;
+$blanco:#DBD4C9;
+$vintaje:#DBBF96;
+$gris-obsucro:#636363;
 
-// Variables
-@import "variables";
+/* variables */
+$fondo: $blanco;
+$data_titulo:'Caveat Brush', cursive;
+$titulos:'Fjalla One', sans-serif;
+$texto:'Josefin Slab', serif;
+/*media query */
+$tablet:768px;
+$desktop:1024px;
+@mixin tablet{
+@media only screen and (min-width:#{$tablet}){
+@content;
+}
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+}
+@mixin desktop{
+@media only screen and (min-width:#{$desktop}){
+@content;
+}
+
+}
+html,body{
+width:100%;
+height:100%;
+}
+
+body{
+	background: $fondo;
+	margin:0;
+	padding:0;
+	padding-bottom:20px;
+
+}
+p{
+	font-family:$texto;
+}
+.container{
+	width: 95%;
+	margin: auto;
+		@include tablet{
+		width: 95%;
+		
+	}
+	@include desktop{
+		width: 100%;
+
+	}
+}
+.banner_heart{
+	width:90%;
+	margin:0 auto;
+	text-align:center;
+
+	@include tablet{
+		width: 50%;
+		
+	}
+	@include desktop{
+		width: 30%;
+
+	}
+
+}
+.banner_heart img{
+ width:100%;
+}
+/* menu */
+.icono-menu{
+	width:90%;
+	margin:1em  auto;
+	text-align:right;
+	img{
+		width: 40px;
+	}
+}
+.menu-background{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0,0,0,.85);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+.content-menu{
+	width:80%;
+	margin: 30% auto;
+	border-radius: 10px 10px 10px 10px;
+    border: 2px dotted #4d4d4d;
+	padding:20px 0;
+	color:$blanco;
+	position:relative;
+	display:scroll;
+
+
+
+
+		@include tablet{
+		width: 60%;
+		margin: 18% auto;
+		
+	}
+	@include desktop{
+		width: 60%;
+		margin: 18% auto;
+
+	}
+
+	ul{
+		width: 80%;
+		margin:auto;
+		padding:0;
+		
+
+		li{
+			 list-style-type: none;
+			 margin:40px auto;
+			 padding:0;
+			 width: 100%;
+			 padding-bottom:10px;
+			 text-align: center;
+			 border-bottom: 2px dotted #4d4d4d;
+
+			 	@include tablet{
+		width: 60%;
+				
+	}
+	@include desktop{
+		width: 40%;
+	
+
+	}
+
+			 p{
+			 	color: $blanco;
+			 	text-decoration: none;
+			 	font-family: $titulos;
+			 	font-size: 22px;
+
+			 	&:hover{
+			 		color: white;
+			 	}
+			 }
+			
+		}
+	}
+}
+
+
+.closet-menu{
+	position:absolute;
+	right:10px;
+	width:auto;
+	font-family:text;
+	cursor:pointer;
+&:hover{
+	color: white;
+	}
+}
+/*fin del menu */
+
+
+/* data */
+.data{
+	width:100%;
+	text-align:center;
+ h2{
+ 	display: block;
+ 	width: 100%;
+	font-family:$data_titulo;
+	font-size:40px;
+}
+
+}
+.mydata{
+	width:100%;
+	margin:auto;
+
+	@include tablet{
+		width: 60%;
+		
+	}
+	@include desktop{
+		width: 50%;
+
+	}
+	span{
+		font-family: $data_titulo;
+
+	}
+}
+.data-personal,.data-profesional{
+	width:50%;
+	float:left;
+}
+
+
+
+.sites{
+	width:95%;
+	display:none;
+	margin:auto;
+
+	h1{
+		padding:20px 0px;
+		display: block;
+		width: 90%;
+		margin:auto;
+		text-align: center;
+		font-family: $titulos;
+		   border: 2px dotted #4d4d4d;
+	}
+
+		@include desktop{
+		width: 80%;
+	
+
+
+
+	}
+}
+.site{
+	
+	
+	width:100%;
+	height:60vw;
+	float:left;
+	margin: 5px 0 20px;
+	padding:0;
+	border:0;
+	box-sizing:border-box;
+    padding-top:50px;
+		background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+	@include tablet{
+		width: 100%;
+		height:23vw;
+		padding-top:35px;
+		margin: 2px 0% 20px;
+
+
+		
+	}
+	@include desktop{
+		width: 100%;
+		height:23vw;
+		padding-top:10%;
+		margin: 2px 0% 20px;
+
+
+
+	}
+	h2{
+		display: block;
+		width: 100%;
+		text-align: center;
+		color: $blanco;
+		font-family: $titulos;
+			@include tablet{
+
+			}
+
+	      @include desktop{
+        	font-size:30px;
+        }
+
+
+	}
+
+
+
+}
+
+.portafolio{
+
+	width: 100%;
+		float: left;
+		height:auto;
+		padding-top:10%;
+		margin-bottom: 2px ;
+
+
+		h3{
+			font-family: $titulos;
+			display: block;
+			padding:5px 0px;
+			font-size: 20px;
+			margin:0;
+		}
+
+
+
+		@include desktop{
+		width: 48%;
+		float: left;
+		height:auto;
+		padding-top:10%;
+		margin: 2px 1%;
+
+
+
+	}
+		@include tablet{
+		width: 46%;
+		height:auto;
+		padding-top:35px;
+		margin: 2px 1%;
+
+
+		
+	}
+}
+
+#site1{
+	background-image:linear-gradient(to bottom,rgba(0,0,0,.1),rgba(0,0,0,.1)),url('../img/trabajo-1.png');
+    
+&:hover{
+	background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.8)),url('../img/trabajo-1.png');
+ 
+}
+}
+#site2{
+	background-image:linear-gradient(to bottom,rgba(0,0,0,.1),rgba(0,0,0,.1)),url('../img/carpaastros.png');
+&:hover{
+	background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.8)),url('../img/carpaastros.png');
+ 
+}
+
+}
+#site3{
+	background-image:linear-gradient(to bottom,rgba(0,0,0,.1),rgba(0,0,0,.1)),url('../img/fundacion.png');
+&:hover{
+	background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.8)),url('../img/fundacion.png');
+ 
+}
+
+}
+#site4{
+	background-image:linear-gradient(to bottom,rgba(0,0,0,.1),rgba(0,0,0,.1)),url('../img/elmatch.png');
+&:hover{
+	background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.8)),url('../img/elmatch.png');
+ 
+}
+
+}
+
+
+
+/* footer */
+.footer{
+	width:90%;
+
+	margin:30px auto 10px;
+	text-align:center;
+	p{
+		color:black;
+	}
+
+}
+
+

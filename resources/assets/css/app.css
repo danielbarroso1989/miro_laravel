@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Josefin+Slab");
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush");
+/* colore */
+/* variables */
+/*media query */
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  background: #DBD4C9;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px; }
+
+p {
+  font-family: "Josefin Slab", serif; }
+
+.container {
+  width: 95%;
+  margin: auto; }
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 95%; } }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      width: 100%; } }
+
+.banner_heart {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .banner_heart {
+      width: 50%; } }
+  @media only screen and (min-width: 1024px) {
+    .banner_heart {
+      width: 30%; } }
+
+.banner_heart img {
+  width: 100%; }
+
+/* menu */
+.icono-menu {
+  width: 90%;
+  margin: 1em  auto;
+  text-align: right; }
+  .icono-menu img {
+    width: 40px; }
+
+.menu-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.content-menu {
+  width: 80%;
+  margin: 30% auto;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px dotted #4d4d4d;
+  padding: 20px 0;
+  color: #DBD4C9;
+  position: relative;
+  display: scroll; }
+  @media only screen and (min-width: 768px) {
+    .content-menu {
+      width: 60%;
+      margin: 18% auto; } }
+  @media only screen and (min-width: 1024px) {
+    .content-menu {
+      width: 60%;
+      margin: 18% auto; } }
+  .content-menu ul {
+    width: 80%;
+    margin: auto;
+    padding: 0; }
+    .content-menu ul li {
+      list-style-type: none;
+      margin: 40px auto;
+      padding: 0;
+      width: 100%;
+      padding-bottom: 10px;
+      text-align: center;
+      border-bottom: 2px dotted #4d4d4d; }
+      @media only screen and (min-width: 768px) {
+        .content-menu ul li {
+          width: 60%; } }
+      @media only screen and (min-width: 1024px) {
+        .content-menu ul li {
+          width: 40%; } }
+      .content-menu ul li p {
+        color: #DBD4C9;
+        text-decoration: none;
+        font-family: "Fjalla One", sans-serif;
+        font-size: 22px; }
+        .content-menu ul li p:hover {
+          color: white; }
+
+.closet-menu {
+  position: absolute;
+  right: 10px;
+  width: auto;
+  font-family: text;
+  cursor: pointer; }
+  .closet-menu:hover {
+    color: white; }
+
+/*fin del menu */
+/* data */
+.data {
+  width: 100%;
+  text-align: center; }
+  .data h2 {
+    display: block;
+    width: 100%;
+    font-family: "Caveat Brush", cursive;
+    font-size: 40px; }
+
+.mydata {
+  width: 100%;
+  margin: auto; }
+  @media only screen and (min-width: 768px) {
+    .mydata {
+      width: 60%; } }
+  @media only screen and (min-width: 1024px) {
+    .mydata {
+      width: 50%; } }
+  .mydata span {
+    font-family: "Caveat Brush", cursive; }
+
+.data-personal, .data-profesional {
+  width: 50%;
+  float: left; }
+
+.sites {
+  width: 95%;
+  display: none;
+  margin: auto; }
+  .sites h1 {
+    padding: 20px 0px;
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    border: 2px dotted #4d4d4d; }
+  @media only screen and (min-width: 1024px) {
+    .sites {
+      width: 80%; } }
+
+.site {
+  width: 100%;
+  height: 60vw;
+  float: left;
+  margin: 5px 0 20px;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media only screen and (min-width: 768px) {
+    .site {
+      width: 100%;
+      height: 23vw;
+      padding-top: 35px;
+      margin: 2px 0% 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .site {
+      width: 100%;
+      height: 23vw;
+      padding-top: 10%;
+      margin: 2px 0% 20px; } }
+  .site h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #DBD4C9;
+    font-family: "Fjalla One", sans-serif; }
+    @media only screen and (min-width: 1024px) {
+      .site h2 {
+        font-size: 30px; } }
+
+.portafolio {
+  width: 100%;
+  float: left;
+  height: auto;
+  padding-top: 10%;
+  margin-bottom: 2px; }
+  .portafolio h3 {
+    font-family: "Fjalla One", sans-serif;
+    display: block;
+    padding: 5px 0px;
+    font-size: 20px;
+    margin: 0; }
+  @media only screen and (min-width: 1024px) {
+    .portafolio {
+      width: 48%;
+      float: left;
+      height: auto;
+      padding-top: 10%;
+      margin: 2px 1%; } }
+  @media only screen and (min-width: 768px) {
+    .portafolio {
+      width: 46%;
+      height: auto;
+      padding-top: 35px;
+      margin: 2px 1%; } }
+
+#site1 {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/trabajo-1.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/trabajo-1.png"); }
+  #site1:hover {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/trabajo-1.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/trabajo-1.png"); }
+
+#site2 {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/carpaastros.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/carpaastros.png"); }
+  #site2:hover {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/carpaastros.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/carpaastros.png"); }
+
+#site3 {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/fundacion.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/fundacion.png"); }
+  #site3:hover {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/fundacion.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/fundacion.png"); }
+
+#site4 {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/elmatch.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/elmatch.png"); }
+  #site4:hover {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/elmatch.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../img/elmatch.png"); }
+
+/* footer */
+.footer {
+  width: 90%;
+  margin: 30px auto 10px;
+  text-align: center; }
+  .footer p {
+    color: black; }
